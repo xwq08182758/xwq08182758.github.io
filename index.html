@@ -1,345 +1,486 @@
 ﻿<!DOCTYPE html>
-<html  xmlns="http://www.w3.org/1999/xhtml"  xml:lang="en"  lang="en">
+<html lang="en" class="ace ace-card-on ace-tab-nav-on ace-main-nav-on ace-sidebar-on" data-theme-color="#c0e3e7">
 <head>
-<title>轻言 </title>		
-<meta name="keywords" content=" ">
-<meta name="description" content="   ">
-<meta name="author" content="www.">	
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
-  <link rel="shortcut icon" href="index/images/favicon.ico">
-  <link rel="stylesheet" href="css/jquery.fancybox-1.3.4.css" type="text/css" media="screen">
-  <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
-  <link href="css/prettyPhoto.css" rel="stylesheet" />
-  <script type="text/javascript" src="js/jquery.min.js" ></script>
-  <script type="text/javascript" src="js/content_switch.js"></script>
-  <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-  <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
-  <script type="text/javascript" src="js/jquery-ui.js"></script>
-  <script type="text/javascript" src="js/cScroll.js"></script>
-  <script src="js/jquery.cycle.all.latest.js" type="text/javascript"></script>
-  <script src="js/jquery.color.js" type="text/javascript"></script>
-  <script type="text/javascript" src="js/script.js"></script>
-  <script type="text/javascript" src="js/functions.js"></script>
-  <script src="js/prettyPhoto.js"></script>
-  <!--[if lt IE 9]>
-  	<script type="text/javascript" src="./js/html5.js"></script>
-    <link rel="stylesheet" href="./css/ie.css" type="text/css" media="all">
-  <![endif]-->
-	<!--[if lt IE 8]>
-		<div style=' clear: both; text-align:center; position: relative;'>
-			<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a>
-		</div>
-	<![endif]-->
-	<body onpaste="return false" ondragstart="return false" onmouseover="window.status='';return true" oncopy="return false;">
-	<frameset> <frame src="index.html"> </frameset>
-<script> 
-function stop(){ 
-alert('krf，I miss you！');
-return false; 
-} 
-document.oncontextmenu=stop; 
-</script>
-<body onselectstart="return false" onpaste="return false" oncopy="return false;" 
-oncut="return false;" >
-</a>
-    <script>
-	
-        function checkhtml5()
-        {
-            if ($.browser.msie  && parseInt($.browser.version, 10) < 9) {
-                document.body.innerHTML="<div style=' clear: both; text-align:center; position: relative; height: 50px; margin-top: 30px; padding: 20px; background-color: red; color: white; font-size:20px;'>你的浏览器非常落后，不支持 HTML5!<br/>请使用 Chrome 14+/IE 9+/Firefox 7+/Safari 4+ 其中任意一款浏览器访问此页面。</a></div>";
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-            }
-        }
-    </script>
-    <style>
-        a.wb_sina {
-            float:left;
-            margin-top:20px;
-            margin-left:15px;
-            display:inline-block;
-            padding:4px 10px;
-            border-radius:3px;
-            background-color:#e55345;
-            background-image:-moz-linear-gradient(top,#e96249,#e03c40);
-            background-image:-ms-linear-gradient(top,#e96249,#e03c40);
-            background-image:-webkit-gradient(linear,0 0,0 100%,from(#e96249),to(#e03c40));
-            background-image:-webkit-linear-gradient(top,#e96249,#e03c40);
-            background-image:-o-linear-gradient(top,#e96249,#e03c40);
-            background-image:linear-gradient(top,#e96249,#e03c40);
-            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e96249',endColorstr='#e03c40',GradientType=0);
-            background-repeat:repeat-x;
-            text-shadow:0 -1px 0 rgba(0,0,0,.5);
-            border:1px solid #cf2b28;
-            color:#fff!important;
-            box-shadow:0 1px 0 rgba(255,255,255,.2) inset,0 1px 0 rgba(0,0,0,.2);
-        }
-        a.wb_sina:hover {
-            background-image:-moz-linear-gradient(top,#e03c40,#e96249);
-            background-image:-ms-linear-gradient(top,#e03c40,#e96249);
-            background-image:-webkit-gradient(linear,0 0,0 100%,from(#e03c40),to(#e96249));
-            background-image:-webkit-linear-gradient(top,#e03c40,#e96249);
-            background-image:-o-linear-gradient(top,#e03c40,#e96249);
-            background-image:linear-gradient(top,#e03c40,#e96249);
-            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e03c40',endColorstr='#e96249',GradientType=0);
-        }
-        a.wb_sina span {
-            display:inline-block;
-            vertical-align:-5px;
-            margin-right:7px;
-            height:20px;
-            width:24px;
-            background:url(./images/weibo.png) no-repeat;
-        }
-        a.wb_tencent {
-            float:left;
-            margin-top:20px;
-            margin-left:15px;
-            display:inline-block;
-            padding:4px 10px;
-            border-radius:3px;
-            background-color:#0e7fcc;
-            background-image:-moz-linear-gradient(top,#1288d4,#0771c1);
-            background-image:-ms-linear-gradient(top,#1288d4,#0771c1);
-            background-image:-webkit-gradient(linear,0 0,0 100%,from(#1288d4),to(#0771c1));
-            background-image:-webkit-linear-gradient(top,#1288d4,#0771c1);
-            background-image:-o-linear-gradient(top,#1288d4,#0771c1);
-            background-image:linear-gradient(top,#1288d4,#0771c1);
-            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1288d4',endColorstr='#0771c1',GradientType=0);
-            background-repeat:repeat-x;
-            text-shadow:0 -1px 0 rgba(0,0,0,.5);
-            border:1px solid #0D6EB8;
-            color:#fff!important;
-            box-shadow:0 1px 0 rgba(255,255,255,.2) inset,0 1px 0 rgba(0,0,0,.2);
-        }
-        a.wb_tencent:hover {
-            background-color:#0e7fcc;
-            background-image:-moz-linear-gradient(top,#0771c1,#1288d4);
-            background-image:-ms-linear-gradient(top,#0771c1,#1288d4);
-            background-image:-webkit-gradient(linear,0 0,0 100%,from(#0771c1),to(#1288d4));
-            background-image:-webkit-linear-gradient(top,#0771c1,#1288d4);
-            background-image:-o-linear-gradient(top,#0771c1,#1288d4);
-            background-image:linear-gradient(top,#0771c1,#1288d4);
-            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0771c1',endColorstr='#1288d4',GradientType=0);
-        }
-        a.wb_tencent span {
-            display:inline-block;
-            vertical-align:-5px;
-            margin-right:7px;
-            height:20px;
-            width:24px;
-            background:url("file:///D:/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1web/-746f82cb4d24e683.jpg") no-repeat 0 -20px;
-        }
-        #abox
-        {
-            position: fixed;
-            _position: absolute;
-            right: 15px;
-            z-index: 99999999;
-        }
-    </style>
-</head>
+    <title>徐文强的个人网站</title>
+    <meta name="description" content="">
 
-<body onLoad="checkhtml5()">
-<div id="abox">
-</div>
-<div class="page_spinner">
-    <div></div>
-</div>
-<div class="over">
-	<div class="centre">
-		<div class="main">
-			<!--header -->
-	  <header>
-				<h1><span id="logo"><img style="border-radius: 250px; width=500px,height=500px;overflow:hidden;"src="images/v7.png" alt="" usemap="#logo"></span></h1>
-				<nav class="menu">
-					<ul id="menu">
-						<li id="nav1"><img src="images/nav1.png" alt=""><span>基本资料</span></li>
-						<li id="nav2"><img src="images/nav2.png" alt=""><span>个人足迹</span></li>
-						<li id="nav3"><img src="images/nav3.png" alt=""><span>兴趣爱好</span></li>
-						<li id="nav4"><img src="images/nav4.png" alt=""><span>听风忆雨</span></li>
-						<li id="nav5"><img src="images/nav5.png" alt=""><span>秋来叶归</span></li>
-						<li id="nav6"><img src="images/nav6.png" alt=""><span>成长历程</span></li>
-					</ul>
-				</nav>
-				<img src="images/spacer.gif" alt="" id="navigation" usemap="#navigation">
-				<map name="navigation" class="navigation">
-	    </map>
-				<map name="logo" class="map_logo"></map>
-			</header>
-			<!--header end-->
-			<!--content -->
-			<map name="back" class="map_back"></map>
-			<article id="content">
-				<ul>
-					<li id="page_Home">
-						<img src="images/bg_content.png" alt="" class="bg_cont">
-						<span class="back"><img src="images/nav1.png" alt="" usemap="#back"><a href="index.html#close">返回</a></span>
-						<div class="pad">
-							<h2>基本资料</h2>
-                            人物：***<br />
-							学号：08182758<br />
-                            院系：计算机科学与技术学院<br />
-                            专业：信息安全<br />
-                            性格：原谅我词穷，说不出你想要的感动<br />
-                            QQ：30706616<br/>
-							--还想了解更多？问问-><a href="http://www.baidu.com" >百度</a>					
-						</div>
-					</li>
-					<li id="page_About">
-						<img src="images/bg_content.png" alt="" class="bg_cont">
-						<span class="back"><img src="images/nav2.png" alt="" usemap="#back"><a href="index.html#close">返回</a></span>
-						<div class="pad">
-							<h2>个人足迹</h2>
-							<div class="relative">
-								<div class="scroll">
-                                    <span>krf &amp; 轻言</span>
-                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;（未完待续）</p>
-                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;（未完待续）</p>
-                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;（未完待续）</p>
-                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;然后.........</p>
-                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;过程.........</p>
-                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;我爱你，我会一直陪在你身边</p>
-                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;不离不弃</p>
-                                    <p>&nbsp;&nbsp;&nbsp;&nbsp; -  </p>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li id="page_Talk">
-						<img src="images/bg_content.png" alt="" class="bg_cont">
-						<span class="back"><img src="images/nav3.png" alt="" usemap="#back"><a href="index.html#close">返回</a></span>
-						<div class="pad">
-							<h2>秋来叶归</h2>
-                            <div class="relative">
-                                <div class="scroll">
-                                    <div style="width:100%;float: left; border-bottom: 1px solid #CCCCCC;">krf<br/><span style="float: right"> --by </span></div>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 
+    <!-- Icon Fonts -->
+    <link href="fonts/icomoon/style.css" rel="stylesheet">
 
-                                    <div style="width:100%;float: left">分享我所知道的<br/><span style="float: right"> --by </span></div>
-                                </div>
-                            </div>
-						</div>
-					</li>
-					<li id="page_Message">
-						<img src="images/bg_content.png" alt="" class="bg_cont">
-						<span class="back"><img src="images/nav4.png" alt="" usemap="#back"><a href="index.html#close">返回</a></span>
-						<div class="pad">
-							<h2>给我祝福</h2>
-                            <div class="relative">
-                                <div class="scroll">
+    <!-- Styles -->
+    <link href="js/plugins/highlight/solarized-light.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 
-                                    <div style="min-height: 300px; padding-bottom: 50px;">
-<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="yyu" data-title="bb" data-url="http://"></div>
-<!-- 多说评论框 end -->
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript"> var duoshuoQuery = {short_name:"love90"}; (function() { var ds = document.createElement('script'); ds.type = 'text/javascript';ds.async = true; ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '/static.duoshuo.com/embed.js'; ds.charset = 'UTF-8'; (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds); })(); </script>
-<!-- 多说公共JS代码 end -->
-                                    </div>
-                                </div>
-                            </div>
-						</div>
-					</li>
-					<li id="page_Blog">
-						<img src="images/bg_content.png" alt="" class="bg_cont">
-						<span class="back"><img src="images/nav5.png" alt="" usemap="#back"><a href="index.html#close">返回</a></span>
-						<div class="pad">
-							<h2>听风忆雨</h2>
-							<div class="relative">
-								<div class="scroll">
-									<ul class="gallery fancybox">
-                                        <li style="line-height:120px"><a href="images/uploadimage/1.png"rel="prettyPhoto[gallery1]"><img src="images/uploadimage/1.png" alt=""></a></li>
-                                        <li style="line-height:120px"><a href="images/uploadimage/3.jpg" rel="prettyPhoto[gallery1]"><img src="images/uploadimage/3.jpg" alt=""></a></li>
-                                        <li style="line-height:120px"><a href="images/uploadimage/7.png"rel="prettyPhoto[gallery1]"><img src="images/uploadimage/7.png" alt=""></a></li>
-                                        <li style="line-height:120px"><a href="images/uploadimage/2.png" rel="prettyPhoto[gallery1]"><img src="images/uploadimage/2.png" alt=""></a></li>
+    <!-- Modernizer -->
+    <script type="text/javascript" src="js/vendor/modernizr-3.3.1.min.js"></script>
+  </head>
+  <body>
+     <div class="ace-wrapper">
+         <header id="ace-header" class="ace-container-shift ace-logo-in ace-head-boxed ace-nav-right">
+             <div class="ace-head-inner">
+                 <div class="ace-head-container ace-container">
+                     <div class="ace-head-row">
+                         <div id="ace-head-col1" class="ace-head-col text-left">
+                             <a id="ace-logo" class="ace-logo" href="index.html">
+                                <img src="img/uploads/brand/logo.svg" alt="ace resume"><span>.轻语</span>
+                             </a>
+                         </div>
+                         
+                         <div id="ace-head-col2" class="ace-head-col text-right">
+                             <div class="ace-nav-container ace-container hidden-sm hidden-xs">
+                                 <nav id="ace-main-nav">
+                                    <ul class="clear-list">
+										<li><a href="index.html">关于</a></li>
+										<li><a href="portfolio.html">作品集</a>
+										<li><a href="testimonials.html">参考资料</a></li>
+										<li><a href="search.html">搜索</a></li>
+										<li><a href="category.html">博客</a></li>
+										<li><a href="contact.html">联系</a></li>
 									</ul>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li id="page_Time">
-						<img src="images/bg_content.png" alt="" class="bg_cont">
-						<span class="back"><img src="images/nav6.png" alt="" usemap="#back"><a href="index.html#close">返回</a></span>
-						<div class="pad">
-<h2>cumt</h2>
-                            <div id="loveHeart" style="margin-top: 30px;font-size: 25px;">
-                                        <span style="">宝贝你知道我爱你爱了多久了吗？</span>
-                                        <div id="elapseClock" style="margin: 10px 0px 10px 0px;"></div>
-                                <img src="images/1.gif" />　　　　<img src="images/2.gif" /><br/><br/>
-                                    <div id="loveu">
-                                        爱：从2018-8-26开始！<br/>
-                                        <div class="signature" style="float: right; margin-right: 50px;">by krf </div>
-                                    </div>
-                          </div>
-                      </div>
-				  </div>
-					</li>
-					
-					
+                                 </nav>
+                             </div>
+                         </div>
+                         
+                         <div id="ace-head-col3" class="ace-head-col text-right">
+                             <button id="ace-sidebar-btn" class="btn btn-icon btn-light btn-shade">
+                                 <span class="ace-icon ace-icon-side-bar-icon"></span>
+                             </button>
+                         </div>
+                     </div>
+                 </div><!-- .ace-container -->
+             </div><!-- .ace-head-inner -->
+        </header><!-- #ace-header -->
+
+        
+        <nav id="ace-nav-sm" class="ace-nav hidden-lg hidden-md">
+            <ul class="clear-list">
+				<li>
+					<a href="index.html" data-tooltip="Home"><img class="avatar avatar-42" src="img/uploads/avatar/avatar-42x42.png" alt=""></a>
+				</li>
+				<li>
+					<a href="experience.html" data-tooltip="Experience"><span class="ace-icon ace-icon-experience"></span></a>
+				</li>
+				<li>
+					<a href="portfolio.html" data-tooltip="Portfolio"><span class="ace-icon ace-icon-portfolio"></span></a>
+				</li>
+				<li>
+					<a href="testimonials.html" data-tooltip="References"><span class="ace-icon ace-icon-references"></span></a>
+				</li>
+				<li>
+					<a href="contact.html" data-tooltip="Contact"><span class="ace-icon ace-icon-contact"></span></a>
+				</li>
+				<li>
+					<a href="category.html" data-tooltip="Blog"><span class="ace-icon ace-icon-blog"></span></a>
+				</li>
+			</ul>
+        </nav><!-- #ace-tab-nav-sm -->
+
+        <article id="ace-card" class="ace-card bg-primary">
+			<div class="ace-card-inner text-center">
+				<img class="avatar avatar-195" src="img/uploads/avatar/v7.png" width="195" height="195" alt="">
+				<h1>徐文强</h1>
+				<ul class="ace-social clear-list">
+					<li><a><span class="ace-icon ace-icon-facebook"></span></a></li>
+					<li><a><span class="ace-icon ace-icon-twitter"></span></a></li>
+					<li><a><span class="ace-icon ace-icon-google-plus"></span></a></li>
+					<li><a><span class="ace-icon ace-icon-instagram"></span></a></li>
+					<li><a><span class="ace-icon ace-icon-pinterest"></span></a></li>
 				</ul>
-			</article>
-			<!--content end-->
-  </div>
-</div>
-	<div class="bg1">	
-		<div class="main">
-			<!--footer -->
-			<footer style="line-height:20px">
-                <div id="copyright">
-                     <a href="" target=_blank></a>  <a 
-href="" target=_blank></a> <script 
- language="JavaScript"></script>
+			</div>
 
-
-
-                </object>
-                </div>
-				<!-- {%FOOTER_LINK} -->
+			<footer class="ace-card-footer">
+				<a class="btn btn-lg btn-block btn-thin btn-upper " href="#">私藏我</a>
 			</footer>
-			<!--footer end-->
-		</div>
-	</div>
-</div>
-<script>
-$(window).load(function() {	
-	$('.page_spinner').fadeOut();
-	$('body').css({overflow:'visible'});
-	
-})
-</script>
+		</article><!-- #ace-card -->
 
-<script type="text/javascript">//修改时光沙漏时间
-    var offsetX = $("#loveHeart").width() / 2;
-    var offsetY = $("#loveHeart").height() / 2 - 55;
-    var together = new Date();
-    together.setFullYear(2018, 08, 26);
-    together.setHours(17);
-    together.setMinutes(0);
-    together.setSeconds(0);
-    together.setMilliseconds(0);
+        <div id="ace-content" class="ace-container-shift">
+            <div class="ace-container">
 
-        setTimeout(function () {
-            adjustWordsPosition();
-            startHeartAnimation();
-        }, 3000);
+                
+                    <div id="ace-nav-wrap" class="hidden-sm hidden-xs">
+                        <div class="ace-nav-cont">
+                            <div id="ace-nav-scroll">
+                                <nav id="ace-nav" class="ace-nav">
+                                    <ul class="clear-list">
+										<li>
+											<a href="index.html" data-tooltip="Home"><img class="avatar avatar-42" src="img/uploads/avatar/v7.png" alt=""></a>
+										</li>									
+										<li>
+											<a href="experience.html" data-tooltip="Experience"><span class="ace-icon ace-icon-experience"></span></a>
+										</li>
+										<li>
+											<a href="portfolio.html" data-tooltip="Portfolio"><span class="ace-icon ace-icon-portfolio"></span></a>
+										</li>
+										<li>
+											<a href="testimonials.html" data-tooltip="References"><span class="ace-icon ace-icon-references"></span></a>
+										</li>
+										<li>
+											<a href="contact.html" data-tooltip="Contact"><span class="ace-icon ace-icon-contact"></span></a>
+										</li>
+										<li>
+											<a href="category.html" data-tooltip="Blog"><span class="ace-icon ace-icon-blog"></span></a>
+										</li>
+									</ul>
+                                </nav>
+                            </div>
 
-        timeElapse(together);
-        setInterval(function () {
-            timeElapse(together);
-        }, 500);
+                            <div id="ace-nav-tools" class="hidden">
+                                <span class="ace-icon ace-icon-dots-three-horizontal"></span>
 
-        adjustCodePosition();
-        $("#code").typewriter();
-</script>
-    <audio id="bgmMusic" src="http://www.51mp3ring.com/51mp3ring_com2/at200611121582079026.mp3" preload="auto" type="audio/mp3" autoplay loop></audio>
+                                <button id="ace-nav-arrow" class="clear-btn">
+                                    <span class="ace-icon ace-icon-chevron-thin-down"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="ace-nav-btm"></div>
+                    </div><!-- .ace-nav-wrap -->
 
-<!--coded by koma-->
+                <div class="ace-paper-stock">
+                    <main class="ace-paper clearfix">
+                        <div class="ace-paper-cont clear-mrg">
+						
+						<!-- START: PAGE CONTENT -->
+    <div class="padd-box clear-mrg">
+        <section class="section brd-btm">
+            <div class="row">
+                <div class="col-sm-12 clear-mrg text-box">
+                    <h2 class="title-lg text-upper">关于我</h2>
 
-<!--LIVEDEMO_00 -->
-</div>
+                    <p><b>Helo, 我是</b><br>
+                        计算机学院18级1班学生，大二分专业后专业是信息安全。目前单身不可撩。</p>
 
+                    <p class="text-right">
+                        <img src="img/uploads/signature.png" alt="">
+                    </p>
+                </div>
+            </div>
+        </section><!-- .section -->
+
+        <section class="section brd-btm">
+            <div class="row">
+                <div class="col-sm-6 clear-mrg">
+                    <h2 class="title-thin text-muted">个人信息</h2>
+
+                    <dl class="dl-horizontal clear-mrg">
+                        <dt class="text-upper">大学</dt>
+                        <dd>中国矿业大学</dd>
+
+                        <dt class="text-upper">入学年份</dt>
+                        <dd>2018—8</dd>
+
+                        <dt class="text-upper">故乡</dt>
+                        <dd>湖北宜昌</dd>
+
+                        <dt class="text-upper">邮箱</dt>
+                        <dd><a href="mailto:robertsmith@company.com">08182758@cumt.edu.cn</a></dd>
+
+                        <dt class="text-upper">电话</dt>
+                        <dd>17701677096</dd>
+
+                        <dt class="text-upper">QQ</dt>
+                        <dd>30706616</dd>
+                    </dl>
+                </div><!-- .col-sm-6 -->
+
+                <div class="col-sm-6 clear-mrg">
+                    <h2 class="title-thin text-muted"></h2>
+<div class="progress-bullets ace-animate" role="progressbar" aria-valuenow="8" aria-valuemin="0" aria-valuemax="10">
+                        <strong class="progress-title"></strong>
+                        <span class="progress-text text-muted"></span>
+                    </div>
+</div><!-- .col-sm-6 -->
+            </div><!-- .row -->
+        </section><!-- .section -->
+
+        <section class="section brd-btm">
+            <div class="row">
+                <div class="col-sm-6 clear-mrg">
+                    <h2 class="title-thin text-muted">专业技能</h2>
+
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <div class="progress-chart ace-animate" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" data-text="90%" data-value="0.9"></div>
+                                <strong class="progress-title">C++</strong>
+                            </div>
+                        </div><!-- .col-xs-4 -->
+
+                        <div class="col-xs-4">
+                            <div class="progress-chart ace-animate" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" data-text="81%" data-value="0.81"></div>
+                                <strong class="progress-title">C#</strong>
+                            </div>
+                        </div><!-- .col-xs-4 -->
+
+                        <div class="col-xs-4">
+                            <div class="progress-chart ace-animate" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" data-text="66%" data-value="0.66"></div>
+                                <strong class="progress-title">web</strong>
+                            </div>
+                        </div><!-- .col-xs-4 -->
+                    </div><!-- .row -->
+                </div><!-- .col-sm-6 -->
+
+                <div class="col-sm-6 clear-mrg">
+                    <h2 class="title-thin text-muted">阅读书籍</h2>
+
+                    <div class="progress-line ace-animate" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                        <strong class="progress-title">C++程序设计</strong>
+                        <div class="progress-bar" data-text="90%" data-value="0.9"></div>
+                    </div>
+
+                    <div class="progress-line ace-animate" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                        <strong class="progress-title">数据结构</strong>
+                        <div class="progress-bar" data-text="80%" data-value="0.8"></div>
+                    </div>
+
+                    <div class="progress-line ace-animate" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                        <strong class="progress-title">HTML与CSS</strong>
+                        <div class="progress-bar" data-text="80%" data-value="0.8"></div>
+                    </div>
+
+                    <div class="progress-line ace-animate" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                        <strong class="progress-title">黑客攻防</strong>
+                        <div class="progress-bar" data-text="70%" data-value="0.7"></div>
+                    </div>
+                </div><!-- .col-sm-6 -->
+            </div><!-- .row -->
+        </section><!-- .section -->
+
+        <!-- .section -->
+
+        <section class="section brd-btm">
+            <div class="row">
+                <div class="col-sm-12 clear-mrg">
+                    <h2 class="title-thin text-muted">个人爱好</h2>
+
+                    <ul class="icon-list icon-list-col3 clearfix">
+                        <li><span class="ace-icon ace-icon-music"></span> 古风音乐</li>
+                        <li><span class="ace-icon ace-icon-blog"></span> 科幻电影</li>
+                        <li><span class="ace-icon ace-icon-blog"></span> 玄幻小说</li>
+                        <li><span class="ace-icon ace-icon-blog"></span> 大熊猫</li>
+                        <li><span class="ace-icon ace-icon-blog"></span> 小熊猫</li>
+                        <li><span class="ace-icon ace-icon-music"></span> 龙猫</li>
+                        <li><span class="ace-icon ace-icon-blog"></span> 柴犬</li>
+                        <li><span class="ace-icon ace-icon-blog"></span> 乒乓球</li>
+                    </ul>
+                </div>
+            </div>
+        </section><!-- .section -->
+
+        <!-- .section -->
+    </div><!-- .padd-box -->
+<!-- END: PAGE CONTENT -->
+						
+                </div><!-- .ace-paper-cont -->
+            </main><!-- .ace-paper -->
+        </div><!-- .ace-paper-stock -->
+
+        </div><!-- .ace-container -->
+    </div><!-- #ace-content -->
+
+    <div id="ace-sidebar">
+		<button id="ace-sidebar-close" class="btn btn-icon btn-light btn-shade">
+			<span class="ace-icon ace-icon-close"></span>
+		</button>
+
+		<div id="ace-sidebar-inner">
+			<nav id="ace-main-nav-sm" class="visible-xs visible-sm text-center">
+				<ul class="clear-list">
+					<li><a href="index.html">about</a></li>
+					<li><a href="portfolio.html">portfolio</a>
+					<li><a href="testimonials.html">references</a></li>
+					<li class="has-sub-menu"><a href="#">pages</a>
+						<ul class="sub-menu">
+							<li><a href="typography.html">typography</a></li>
+							<li><a href="components.html">components</a></li>
+							<li><a href="search.html">search</a></li>
+							<li><a href="404.html">404</a></li>
+						</ul>
+					</li>
+					<li class="has-sub-menu"><a href="category.html">blog</a>
+						<ul class="sub-menu">
+							<li><a href="single.html">single</a></li>
+							<li><a href="single-image.html">single image</a></li>
+							<li><a href="single-slider.html">single slider</a></li>
+							<li><a href="single-youtube.html">single youtube</a></li>
+							<li><a href="single-vimeo.html">single vimeo</a></li>
+							<li><a href="single-dailymotion.html">single dailymotion</a></li>
+							<li><a href="single-soundcloud.html">single soundcloud</a></li>
+							<li><a href="single-video.html">single video</a></li>
+							<li><a href="single-audio.html">single audio</a></li>
+						</ul>
+					</li>
+					<li><a href="contact.html">contact</a></li>
+				</ul>
+			</nav><!-- #ace-main-nav-sm -->
+
+			<article class="ace-card bg-primary">
+				<div class="ace-card-inner text-center">
+					<img class="avatar avatar-195" src="img/uploads/avatar/avatar-195x195.png" width="195" height="195" alt="">
+					<h1>Ola Lowe</h1>
+					<p class="text-muted">Florist | Decorator</p>
+					<ul class="ace-social clear-list">
+						<li><a><span class="ace-icon ace-icon-facebook"></span></a></li>
+						<li><a><span class="ace-icon ace-icon-twitter"></span></a></li>
+						<li><a><span class="ace-icon ace-icon-google-plus"></span></a></li>
+						<li><a><span class="ace-icon ace-icon-instagram"></span></a></li>
+						<li><a><span class="ace-icon ace-icon-pinterest"></span></a></li>
+					</ul>
+				</div>				
+			</article><!-- #ace-card -->
+
+			<aside class="widget-area">
+				<section class="widget widget_search">
+					<form role="search" method="get" class="search-form" action="http://sc.chinaz.com/jiaoben/">
+						<label>
+							<span class="screen-reader-text">Search for:</span>
+							<input type="search" class="search-field" placeholder="Search" value="" name="s">
+						</label>
+						<button type="submit" class="search-submit">
+							<span class="screen-reader-text">Search</span>
+							<span class="ace-icon ace-icon-search"></span>
+						</button>
+					</form>
+				</section>
+
+				<section class="widget widget_posts_entries">
+					<h2 class="widget-title">popular posts</h2>
+					<ul>
+						<li>
+							<a class="post-image" href="">
+								<img src="http://noemi.px-lab.com/wp-content/uploads/2016/05/tttt-70x70.png" alt="">
+							</a>
+							<div class="post-content">
+								<h3>
+									<a href="">contextual advertising</a>
+								</h3>
+							</div>
+							<div class="post-category-comment">
+								<a href="" class="post-category">Work</a>
+								<a href="" class="post-comments">256 comments</a>
+							</div>
+						</li>
+
+						<li>
+							<a class="post-image" href="">
+								<img src="http://noemi.px-lab.com/wp-content/uploads/2016/05/IMG_8945-1-70x70.jpg" alt="">
+							</a>
+							<div class="post-content">
+								<h3>
+									<a href="">grilling tips for the dog days of summer</a>
+								</h3>
+							</div>
+							<div class="post-category-comment">
+								<a href="" class="post-category">Work</a>
+								<a href="" class="post-comments">256 comments</a>
+							</div>
+						</li>
+
+						<li>
+							<a class="post-image" href="">
+								<img src="http://noemi.px-lab.com/wp-content/uploads/2016/05/15-70x70.png" alt="">
+							</a>
+							<div class="post-content">
+								<h3><a href=""></a>branding do you know who are</h3>
+							</div>
+							<div class="post-category-comment">
+								<a href="" class="post-category">Work</a>
+								<a href="" class="post-comments">256 comments</a>
+							</div>
+						</li>
+					</ul>
+				</section>
+
+				<section id="tag_cloud-2" class="widget widget_tag_cloud">
+					<h2 class="widget-title">Tags</h2>
+					<div class="tagcloud">
+						<a href="http://sc.chinaz.com/jiaoben/tag/audios/" class="tag-link-5 tag-link-position-1" title="1 topic" style="font-size: 1em;">Audios</a>
+						<a href="" class="tag-link-7 tag-link-position-2" title="1 topic" style="font-size: 1em;">Freelance</a></div>
+				</section>
+
+				<section id="recent-posts-3" class="widget widget_recent_entries">
+					<h4 class="widget-title">Recent Posts</h4>
+					<ul>
+						<li>
+							<a href="">Global Travel And Vacations  Luxury Travel On A Tight  Budget</a>
+							<div class="post-category-comment">
+								<a href="" class="post-category">Photography</a>
+								<a href="" class="post-comments">256 comments</a>
+							</div>
+						</li>
+						<li>
+							<a href="">cooking for one</a>
+							<div class="post-category-comment">
+								<a href="" class="post-category">Work</a>
+								<a href="" class="post-comments">256 comments</a>
+							</div>
+						</li>
+						<li>
+							<a href="">An Ugly Myspace Profile Will  Sure Ruin Your Reputation</a>
+							<div class="post-category-comment">
+								<a href="" class="post-category">Photography</a>
+								<a href="" class="post-comments">256 comments</a>
+							</div>
+						</li>
+					</ul>
+				</section>
+
+				<section class="widget widget_categories">
+					<h4 class="widget-title">post categories</h4>
+					<ul>
+						<li class="cat-item"><a href="">Audios</a>5</li>
+						<li class="cat-item"><a href="">Daili Inspiration</a>2</li>
+						<li class="cat-item"><a href="">Freelance</a>27</li>
+						<li class="cat-item"><a href="">Links</a>5</li>
+						<li class="cat-item"><a href="">Mobile</a>2</li>
+						<li class="cat-item"><a href="">Phography</a>27</li>
+					</ul>
+				</section>
+			</aside>
+
+		</div><!-- #ace-sidebar-inner -->
+	</div><!-- #ace-sidebar -->
+
+    <footer id="ace-footer" class="ace-container-shift">
+        <div class="ace-container">
+			<div class="ace-footer-cont clear-mrg"> </div>
+        </div><!-- .ace-container -->
+    </footer><!-- #ace-footer -->
+
+    <!-- Triangle Shapes -->
+    <svg id="ace-bg-shape-1" class="hidden-sm hidden-xs" height="519" width="758">
+        <polygon points="0,455,693,352,173,0,92,0,0,71" style="fill:#d2d2d2;stroke:purple;stroke-width:0; opacity: 0.5">
+    </svg>
+
+    <svg id="ace-bg-shape-2" class="hidden-sm hidden-xs" height="536" width="633">
+        <polygon points="0,0,633,0,633,536" style="fill:#c0e3e7;stroke:purple;stroke-width:0" />
+    </svg>
+</div><!-- .ace-wrapper -->
+
+<!-- Scripts -->
+<script type="text/javascript" src="js/vendor/jquery-1.12.4.min.js"></script>
+
+
+<!---<script type="text/javascript" src="http://ditu.google.cn/maps/api/js?key=AIzaSyDiwY_5J2Bkv2UgSeJa4NOKl6WUezSS9XA"></script>--->
+<script type="text/javascript" src="js/plugins/highlight/highlight.pack.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.mCustomScrollbar.min.js"></script>
+<script type="text/javascript" src="js/plugins/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="js/plugins/progressbar.min.js"></script>
+<script type="text/javascript" src="js/plugins/slick.min.js"></script>
+
+<script type="text/javascript" src="js/options.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
